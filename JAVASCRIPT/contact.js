@@ -12,8 +12,8 @@ const inputPesan = document.querySelector(".inputPesan");
 normal.disabled = true;
 
 inputEmail.addEventListener("change", stateHandle);
-// inputName.addEventListener("change", stateHandle);
-// inputPesan.addEventListener("change", stateHandle);
+inputName.addEventListener("change", stateHandle);
+inputPesan.addEventListener("change", stateHandle);
 
 function stateHandle() {
 	if (inputEmail && inputName && inputPesan.value === "") {
